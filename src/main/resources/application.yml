@@ -3,3 +3,14 @@ server:
 spring:
   application:
     name: demo
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#配置mapper xml文件的路径
+mybatis-plus:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+# 配置SQL日志输出
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
